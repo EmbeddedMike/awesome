@@ -1,0 +1,1 @@
+start %AWESOME%\lib\Git\bin\bash.exe --login -i

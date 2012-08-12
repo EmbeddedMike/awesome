@@ -1,0 +1,8 @@
+#makecmd <filename> <path> creates <filename> and <filename>.cmd
+#     in $awesome/bin each of which will run <path>
+
+dospath=$( echo $2 | sed s#/#\\\\#g )
+unixpath=$( echo $2 | sed s#\\\\#/#g )
+
+echo  %AWESOME%\\$dospath >$awesome/bin/$1.cmd
+echo  $\awesome/$unixpath >$awesome/bin/$1

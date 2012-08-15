@@ -1,1 +1,2 @@
-$awesome/lib/sublime/sublime_text.exe
+#!/bin/sh
+$awesome/lib/sublime/sublime_text.exe $@

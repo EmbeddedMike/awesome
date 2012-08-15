@@ -1,10 +1,11 @@
 echo +------------------------------+
 echo \| Starting New Awesome Environment \|
 echo +------------------------------+
-cd "$( dirname "${BASH_SOURCE[0]}" )" 
+
+#cd "$( dirname "${BASH_SOURCE[0]}" )" 
 udir="${BASH_SOURCE[0]}"
 export awesome=$(dirname $(dirname $(dirname $(echo $udir))))
-
+cd $awesome
 
 #NJS_SHELL=$AS/bin/spidermonkey
 #$USERNAME=all
